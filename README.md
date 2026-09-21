@@ -22,10 +22,10 @@ This project is an engineering module built by **DJIDEL Abdelali Rayan** (System
 
 ```mermaid
 graph TD
-    Gyro[IMU Sensor / Platform Pose] --> Error[Error Calculation: Target vs Current Angle]
-    Error --> PID[PID Controller (P, I, D Gains)]
-    PID --> Actuators[Servo Motor Actuators X & Y]
-    Actuators --> Platform[Physical / WebGL 3D Platform Pose]
+    Gyro["IMU Sensor / Platform Pose"] --> Error["Error Calculation: Target vs Current Angle"]
+    Error --> PID["PID Controller (P, I, D Gains)"]
+    PID --> Actuators["Servo Motor Actuators X & Y"]
+    Actuators --> Platform["Physical / WebGL 3D Platform Pose"]
     Platform --> Gyro
 ```
 
